@@ -1,16 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import 'ngx-moment';
-
 import { AppComponent } from './app.component';
+import {MomentModule} from 'ngx-moment';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MomentModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
